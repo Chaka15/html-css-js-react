@@ -1,0 +1,30 @@
+header {
+  justify-content: space-around;
+}
+header a {
+  font-size: 2rem;
+}
+.sides {
+  display: block;
+}
+.sides img {
+  height: 14vh;
+}
+.center img {
+  display: none;
+}
+
+main {
+  flex-direction: row;
+  justify-content: space-around;
+}
+main article {
+  width: 30%;
+  height: 200px;
+}
+footer {
+  display: flex;
+}
+.left-footer {
+  padding: 0 100px;
+}

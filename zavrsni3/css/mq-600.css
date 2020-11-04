@@ -1,0 +1,56 @@
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+.titleh {
+    padding-left: 3rem;
+    /* border: 1px solid black; */
+    width: 33%;
+}
+#top-nav {
+    /* border: 3px solid hotpink; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67%;
+}
+#top-nav a {
+    text-decoration: none;
+    color: #333;
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: steelblue;
+}
+#top-nav a:hover {
+    background-color: white;
+}
+.img {
+    background-image: url("../img/adventure-lg.jpg");
+}
+main {
+    margin-top: 1.5rem;
+    flex-flow: row wrap;
+}
+.big-cont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.big-cont div {
+    width: 49vw;
+}
+#bottom-nav {
+    display: none;
+}
+footer {
+    height: 7rem;
+}

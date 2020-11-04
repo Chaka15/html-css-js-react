@@ -1,0 +1,141 @@
+body,
+main,
+header,
+div,
+footer,
+h2,
+ul,
+li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  letter-spacing: 1px;
+  background-image: url("./img/minimalist.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  /* border: 1px solid red; */
+  width: 60%;
+  height: 90%;
+  margin-bottom: 30px;
+  background-color: whitesmoke;
+  opacity: 0.7;
+  box-shadow: 5px 10px 10px 5px grey;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+header,
+.list,
+footer {
+  width: 80%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  border-bottom: 1px solid black;
+}
+header h2 {
+  font-size: 2rem;
+}
+.input-btn {
+  display: flex;
+  align-items: center;
+}
+input {
+  outline: none;
+  width: 250px;
+  height: 25px;
+}
+button {
+  cursor: pointer;
+}
+.check {
+  outline: none;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+.check:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+.list {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  height: 350px;
+}
+ul {
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+/* Animation */
+@keyframes slidein {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+ul button {
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  height: 30px;
+  width: 40%;
+  list-style-type: none;
+  outline: none;
+  background-color: tomato;
+  font-size: 1rem;
+  font-weight: bold;
+  animation: 0.3s ease-in slidein;
+}
+ul button::first-letter {
+  text-transform: uppercase;
+}
+.fa-times {
+  padding: 3px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-left: 45px;
+}
+i:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+footer {
+  padding-top: 10px;
+  border-top: 1px solid black;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+@keyframes changeColor {
+  from {
+    color: tomato;
+    background-color: inherit;
+  }
+  to {
+    color: whitesmoke;
+    background-color: green;
+    opacity: 1;
+  }
+}
+.list-btn {
+  animation: 1s forwards changeColor;
+  animation-iteration-count: 1;
+}

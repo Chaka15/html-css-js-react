@@ -1,0 +1,26 @@
+.NavLinks {
+  height: 100px;
+  width: 200px;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+a:hover,
+a.activeClass {
+  color: darkslategrey;
+  background-color: white;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .NavLinks {
+    height: 80px;
+    width: 140px;
+  }
+}

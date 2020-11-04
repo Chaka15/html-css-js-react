@@ -1,0 +1,14 @@
+body {
+    /* border: 10px solid hotpink; */
+    height: 100vh;
+}
+h2 {
+  width: 70vw;  
+}
+.down-main {
+    width: 100vw;
+    height: 300px;
+}
+.buttons {
+    justify-content: space-around;
+}

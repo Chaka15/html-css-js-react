@@ -1,0 +1,33 @@
+.SearchField {
+  width: 25%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  cursor: pointer;
+  outline: none;
+  margin-right: 20px;
+}
+button {
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+}
+button:hover {
+  color: black;
+  background-color: white;
+}
+@media (max-width: 600px) {
+  input {
+    margin-right: 5px;
+  }
+}

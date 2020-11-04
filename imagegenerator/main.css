@@ -1,0 +1,26 @@
+body {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+.flex-cont {
+  width: 100%;
+  height: 300px;
+  border: 2px solid green;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  width: 120px;
+  height: 120px;
+}

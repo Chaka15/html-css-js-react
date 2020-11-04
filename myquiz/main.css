@@ -1,0 +1,106 @@
+html,
+body,
+main,
+div,
+h2,
+button,
+p {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498bf;
+  font-family: "Mulish", sans-serif;
+  letter-spacing: 1px;
+}
+main {
+  background-color: #14488c;
+  box-shadow: 10px 10px 10px whitesmoke;
+  height: 75%;
+  width: 70%;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.top p {
+  color: white;
+  font-weight: bold;
+}
+h2 {
+  font-style: italic;
+  color: white;
+  font-size: 2rem;
+}
+.bottom {
+  height: 74%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.ans {
+  /* border: 1px solid red; */
+  background-color: white;
+  border-radius: 8px;
+  height: 50px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+button {
+  background-color: #14488c;
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  margin: 0 20px;
+  box-shadow: 5px 5px 3px grey;
+  outline: none;
+}
+button:hover {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+.score {
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+
+@keyframes slide {
+  0% {
+    font-size: inherit;
+  }
+  100% {
+    font-size: 4rem;
+  }
+}
+.animation {
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+}

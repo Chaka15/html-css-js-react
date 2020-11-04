@@ -1,0 +1,84 @@
+body,
+div,
+button {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightcoral;
+}
+.board {
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cell {
+  flex: 1 0 30%;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+.cell:nth-child(3n + 1) {
+  border-left: none;
+}
+.cell:nth-child(3n + 3) {
+  border-right: none;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:last-child {
+  border-bottom: none;
+}
+.win-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  margin-bottom: -30px;
+  width: 300px;
+  height: 130px;
+  font-size: 2rem;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.cell.x,
+.cell.circle {
+  cursor: not-allowed;
+}
+.cell.x,
+.board.x .cell:not(.x):not(.circle):hover {
+  background-image: url("img/x.png");
+  background-size: contain;
+}
+.cell.circle,
+.board.circle .cell:not(.x):not(.circle):hover {
+  background-image: url("img/o.png");
+  background-size: contain;
+}

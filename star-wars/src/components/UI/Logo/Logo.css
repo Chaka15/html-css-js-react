@@ -1,0 +1,12 @@
+.Logo {
+  width: 200px;
+}
+img {
+  border-radius: 10px;
+  width: 150px;
+}
+@media (max-width: 600px) {
+  .Logo {
+    display: none;
+  }
+}

@@ -1,0 +1,40 @@
+header {
+    margin-top: 1.5rem;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+header nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    background-color: #f6f6f6;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #484848;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header nav div {
+    border: 1px solid lightgray;
+    width: 30%;
+    margin: 0 30px;
+}
+figure {
+    background-image: url("../images/fam_blur.jpg");
+}
+article img {
+    display: initial;
+}
+.second-fig {
+    background-image: url("../images/us_left_web_30.jpg");
+}

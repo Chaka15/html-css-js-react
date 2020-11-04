@@ -1,0 +1,16 @@
+svg {
+  margin-top: 2rem;
+  height: 7rem;
+}
+br {
+  display: none;
+}
+input {
+  width: 400px;
+}
+#firstName,
+#pass,
+#signIn {
+  width: 40%;
+  height: 3.5rem;
+}

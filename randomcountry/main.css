@@ -1,0 +1,43 @@
+html,
+body,
+p,
+div,
+img,
+button {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Da 2", cursive;
+  font-size: 1.3rem;
+  background-color: whitesmoke;
+}
+#description {
+  text-align: center;
+  margin-top: 30px;
+}
+.container {
+  width: 85%;
+  height: 490px;
+  border: 2px solid turquoise;
+  border-radius: 15px;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+img {
+  height: 180px;
+  width: 360px;
+}
+button {
+  background-color: turquoise;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  outline: none;
+}

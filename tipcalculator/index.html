@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Calculate your tip!</h1>
+    <div id="main">
+      <div class="container">
+        <p>Bill amount:</p>
+        <input type="number" id="bill" oninput="main()" />
+      </div>
+      <div class="container">
+        <p>Percentage tip:</p>
+        <input type="number" id="perc" oninput="main()" />
+      </div>
+      <div class="container">
+        <p>Tip amount:</p>
+        <input type="text" disabled class="dis" id="tip" />
+      </div>
+      <div class="container">
+        <p>Total:</p>
+        <input type="text" disabled class="dis" id="total" />
+      </div>
+      <button id="submit">Submit your bill</button>
+    </div>
+    <div id="list">
+      <!-- <div class="item">
+        <h1>1.Total bill is 100$</h1>
+      </div> -->
+    </div>
+    <button id="clear">Clean all bills</button>
+    <svg>
+      <filter id="wavy">
+        <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">
+          <animate
+            attributeName="baseFrequency"
+            dur="60s"
+            values="0.02;0.05;0.02"
+            repeatCount="indefinite"
+          />
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" scale="30" />
+      </filter>
+    </svg>
+    <script src="script.js"></script>
+  </body>
+</html>
