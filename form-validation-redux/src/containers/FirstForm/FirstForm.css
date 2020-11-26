@@ -1,0 +1,13 @@
+.FirstForm {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Input {
+  outline: none;
+  height: 40px;
+  font-size: 22px;
+}

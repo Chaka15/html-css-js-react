@@ -1,0 +1,27 @@
+.Button {
+  height: 40px;
+  width: 90px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 30px;
+  cursor: pointer;
+  font-weight: 800;
+  color: white;
+}
+
+.Back {
+  background-color: red;
+}
+.Back:hover {
+  color: red;
+  background-color: black;
+}
+
+.Next {
+  background-color: green;
+}
+.Next:hover {
+  color: green;
+  background-color: black;
+}
