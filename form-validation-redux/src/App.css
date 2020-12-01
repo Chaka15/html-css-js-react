@@ -1,4 +1,10 @@
 .App {
   text-align: center;
-  background-color: wheat;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(170, 44, 95, 0.26934523809523814) 0%,
+    rgba(98, 60, 121, 1) 50%
+  );
 }
