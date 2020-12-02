@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import * as actionTypes from "../../store/actions";
+import * as actions from "../../store/actions/actions";
 import { connect } from "react-redux";
 import classes from "./ThirdForm.css";
 import Button from "../../components/Button/Button";
@@ -82,10 +82,10 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onChangePassHandler: (val) => {
-      dispatch({ type: actionTypes.CHANGE_PASS, value: val });
+      dispatch(actions.changePass(val));
     },
     onChangePassConfirmedHandler: (val) => {
-      dispatch({ type: actionTypes.CHANGE_PASS_CONFIRMED, value: val });
+      dispatch(actions.changePassConfirmed(val));
     },
   };
 };

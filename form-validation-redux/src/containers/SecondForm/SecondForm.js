@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import * as actionTypes from "../../store/actions";
+import * as actions from "../../store/actions/index";
 import { connect } from "react-redux";
 import classes from "./SecondForm.css";
 import Button from "../../components/Button/Button";
@@ -74,10 +74,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onChangeHandlerMail: (val) =>
-      dispatch({ type: actionTypes.CHANGE_EMAIL, value: val }),
-    onChangeHandlerNum: (val) =>
-      dispatch({ type: actionTypes.CHANGE_POSTAL, value: val }),
+    onChangeHandlerMail: (val) => dispatch(actions.changeEmail(val)),
+    onChangeHandlerNum: (val) => dispatch(actions.changePostal(val)),
   };
 };
 

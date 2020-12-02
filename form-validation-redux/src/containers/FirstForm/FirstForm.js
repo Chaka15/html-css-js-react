@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import * as actionTypes from "../../store/actions";
+import * as actions from "../../store/actions/index";
 import { connect } from "react-redux";
 import classes from "./FirstForm.css";
 import Button from "../../components/Button/Button";
@@ -61,8 +61,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onChangeHandler: (val) =>
-      dispatch({ type: actionTypes.CHANGE_USERNAME, value: val }),
+    onChangeHandler: (val) => dispatch(actions.changeUsername(val)),
   };
 };
 
