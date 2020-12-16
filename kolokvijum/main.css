@@ -1,0 +1,167 @@
+body,
+main,
+div,
+h1,
+p,
+button,
+span,
+label,
+form,
+input,
+footer,
+i {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-weight: 300;
+}
+main {
+  height: 100vh;
+  background-image: url("https://wallpaperaccess.com/full/1124591.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+.title {
+  padding: 20px 0 110px 0;
+}
+#main-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#left,
+#right {
+  width: 45%;
+  height: 400px;
+}
+#left {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+#left p {
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+#left button {
+  color: white;
+  background-color: inherit;
+  font-size: 1rem;
+  padding: 5px;
+  border: 1px solid white;
+  margin: 40px 0 20px 0;
+  cursor: pointer;
+}
+#right {
+  background-color: cornflowerblue;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tickets-title {
+  color: whitesmoke;
+}
+#right-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  /* border: 1px solid blue; */
+  margin-bottom: 50px;
+}
+#left-small,
+#right-small {
+  width: 43%;
+  margin-top: 30px;
+  /* border: 1px solid hotpink; */
+}
+#left-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#left-small p:first-child {
+  color: black;
+  font-weight: bold;
+}
+#p-div {
+  height: 40px;
+  width: 200px;
+  background-color: white;
+  margin-top: 15px;
+}
+#p-div p {
+  padding: 10px 10px 0 5px;
+  color: aqua;
+}
+#right-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#right-small span {
+  background-color: white;
+  color: black;
+  padding: 5px 8px;
+}
+.line {
+  width: 100%;
+  margin-top: 30px;
+  border: 1px solid black;
+}
+#submit {
+  padding: 5px 25px;
+  color: antiquewhite;
+  background-color: inherit;
+  border: 1px solid white;
+  margin-top: 10px;
+}
+
+/* Second part */
+#down {
+  height: 80vh;
+  background-color: mediumslateblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#age {
+  text-align: center;
+  font-size: 1.1rem;
+}
+footer {
+  height: 20vh;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+footer span {
+  padding-right: 3px;
+  border-right: 1px solid white;
+}
+#down form {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
