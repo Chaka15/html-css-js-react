@@ -49,6 +49,7 @@ baseStrings.dropdowns.forEach((dropdown) => {
       baseStrings.age.value = age;
       validAge = true;
     } else {
+      baseStrings.age.value = "Greska u datumu!";
       validAge = false;
     }
   });
@@ -107,7 +108,6 @@ baseStrings.submitButton.addEventListener("click", () => {
     validAge &&
     validMail &&
     validPassword &&
-    baseStrings.checkboxes[2].checked &&
     (baseStrings.checkboxes[0].checked || baseStrings.checkboxes[1].checked)
   ) {
     let newWindow = window.open("", "", "width=500px,height=500px");
